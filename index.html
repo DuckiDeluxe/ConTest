@@ -1,38 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" >
-<head> <body>
-  <meta charset="UTF-8">
-  <title>Controller Tester &amp; Svelte3)</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" href="./style.css">
-
-<div id="pad"></div>
-<!-- partial -->
-  <script  src="./vibrate.js"></script>
-<div id="app" class="column">
-
-  <template v-if="gamepad">
-
-    <div class="field">
-      <label class="label">Intensity</label>
-      <div class="control">
-        <input
-          class="slider"
-          type="range"
-          min=0
-          max=100
-          v-model="magnitude">
-      </div>
-
-     <div class="field">
-      <label class="label">On/Off</label>
-      <div class="control">
-        <button
-          class="button is-primary"
-          type="button"
-          @click="toggleGo">
-          {{ button }}
-        </button>
-</body><div id="app" class="column">
-       </head>
+		<body>
+      	<head>
+			<meta charset="UTF-8">
+				<title>Controller Tester &amp; Svelte3)</title>
+				<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+					<link rel="stylesheet" href="./style.css">
+      </head>
+  </body>
 </html>
