@@ -15,5 +15,21 @@
 <!-- partial -->
   <script  src="./script.js"></script>
   </script>
+  <button onclick="contVib()">Vibrate Test</button>
+
+<p id="demo"></p>
+
+<script>
+function contVib() {
+  const gamepad = navigator.getGamepads()[0];
+
+gamepad.vibrationActuator.playEffect("dual-rumble", {
+  startDelay: 0,
+  duration: 400,
+  weakMagnitude: 1.0,
+  strongMagnitude: 1.0,
+});
+}
+</script>
 </body>
 </html>
